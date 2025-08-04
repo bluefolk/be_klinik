@@ -48,8 +48,9 @@ app.post('/api/notification/midtrans', async (req, res) => {
       fraudStatus,
     });
 
-    // Forward to transaction handler
-    const response = await fetch(`https://be-klinik.onrender.com/api/notification`, {
+// Forward to transaction handler
+const response = await fetch(`https://be-klinik.onrender.com/api/notification`, {
+// const response = await fetch(`http://172.20.10.3:3001/api/notification`, {
 
 
       method: 'POST',
