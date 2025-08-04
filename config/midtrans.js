@@ -4,9 +4,9 @@ const midtransClient = require('midtrans-client');
 // Initialize Midtrans configuration
 const midtransConfig = {
   isProduction: true, // Production mode
-  serverKey: process.env.MIDTRANS_SERVER_KEY || 'Mid-server-qOW_cbditeBF2TPqlkBeMtSt',
-  clientKey: process.env.MIDTRANS_CLIENT_KEY || 'Mid-client-Sf0Uytv_DdYXKqDO',
-  merchantId: process.env.MIDTRANS_MERCHANT_ID || 'G812785867',
+  serverKey: process.env.MIDTRANS_SERVER_KEY,
+  clientKey: process.env.MIDTRANS_CLIENT_KEY,
+  merchantId: process.env.MIDTRANS_MERCHANT_ID,
 };
 
 // Validate required configuration
